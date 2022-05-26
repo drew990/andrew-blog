@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 80vh;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: #eef1ef;
+}
+
+nav {
+  background-color: #191919;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  margin: auto auto auto 50px;
+}
+
+.nav-brand {
+  margin: auto auto auto 50px;
+}
+
+.container {
+  padding: 25px;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+/* Login Page */
+
+.login-container {
+  height: 65vh;
+}
+
+.card {
+  background-color: #eca72c;
+  color: #000;
+  padding: 15px;
+  width: max-content;
+  margin: 25px auto;
+  border-radius: 5px;
+  box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.5);
+}

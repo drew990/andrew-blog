@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Tech Blog</title>
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+  </head>
+  <nav>
+    <div class="navbar">
+      <a href="/">
+        <h2>Home</h2>
+      </a>
+      <a href="/dashboard">
+        <h2>Dashboard</h2>
+      </a>
+      {{#if loggedIn}}
+        <button id="logout">Log Out</button>
+      {{else}}
+        <a href="/login">
+          <h2>Login</h2>
+        </a>
+      {{/if}}
+    </div>
+    <h2 class="nav-brand">The Tech blog</h2>
+  </nav>
+  <body>
+    <div class="container">
+      {{{body}}}
+    </div>
+    <footer>
+      <h4>
+        Made by Andrew Banagas
+      </h4>
+      <a href="github/drew990">
+        <p>
+          Github Profile
+        </p>
+      </a>
+    </footer>
+    {{#if loggedIn}}
+      <script src="../../js/logout.js"></script>
+    {{else}}
+      <script src="../../js/login.js"></script>
+    {{/if}}
+  </body>
+</html>
+
+{{!--         {{#If LoginIn}}
+          <h2>Logout</h2>
+        {{#else}}
+          Log In
+        {{/else}} --}}
