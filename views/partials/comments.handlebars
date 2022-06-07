@@ -1,0 +1,10 @@
+<div>
+  {{#each this}}
+    <h3>
+      {{user.username}}
+      on
+      {{format_date create_at}}
+    </h3>
+    {{comment_text}}
+  {{/each}}
+</div>

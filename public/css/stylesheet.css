@@ -31,12 +31,27 @@ nav {
   margin: auto auto auto 50px;
 }
 
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .nav-brand {
   margin: auto auto auto 50px;
 }
 
 .container {
   padding: 25px;
+  min-height: 80vh;
+}
+
+button {
+  padding: 5px 15px;
+  border: #000 2px solid;
+  font-weight: 600;
+  font-family: sans-serif;
+  box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 footer {
@@ -44,6 +59,7 @@ footer {
   color: #fff;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 20px 15px;
 }
 
@@ -51,10 +67,67 @@ footer h4 {
   margin-bottom: 10px;
 }
 
+.divider {
+  width: 400px;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/* form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 250px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+form div input {
+  margin-top: 15px;
+  width: 300px;
+  padding: 5px 15px;
+}
+
+form div textarea {
+  margin-top: 15px;
+  width: 300px;
+  padding: 5px 15px;
+} */
+
+.add-comment-display {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100px;
+  justify-content: space-around;
+}
+
+/* form div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px auto;
+  width: 500px;
+}
+
+form div label {
+  margin-bottom: 10px;
+}
+
+form div textarea {
+  margin: auto;
+  width: 100%;
+} */
+
 /* Login Page */
 
 .login-container {
-  height: 65vh;
+  min-height: 65vh;
 }
 
 .card {
@@ -65,4 +138,67 @@ footer h4 {
   margin: 25px auto;
   border-radius: 5px;
   box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.form-display {
+  min-height: 100px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* #a9b4c2 */
+
+/* Home/Dashboard Page */
+
+.card-post {
+  background-color: #7d98a1;
+  color: #fff;
+  padding: 15px 50px;
+  border-radius: 5px;
+  box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  margin: 25px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-post div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 175px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Post page */
+.comment-container {
+  width: 400px;
+  margin: auto;
+}
+
+/* Edit Page */
+
+.edit-textarea {
+  padding: 15px 5px;
+  width: 400px;
+  height: fit-content;
+}
+
+.title-input {
+  padding: 15px 5px;
+  width: 400px;
+  height: fit-content;
 }

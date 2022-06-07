@@ -1,3 +1,7 @@
-<article>
-  <h2>{{title}}</h2>
+<article class="card-post">
+  <a style="text-decoration: none; color: #fff;" href="/posts/{{id}}">
+    <h2>{{title}}</h2>
+    <h3>Created: {{createdAt}}</h3>
+    <p>By: {{user.username}}</p>
+  </a>
 </article>

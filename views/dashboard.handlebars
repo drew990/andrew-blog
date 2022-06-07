@@ -1,19 +1,23 @@
 <div>
-  <h1>Your in dashboard</h1>
-  <form id="new-post-form">
-    <label for="input-title">Title</label>
-    <input id="input-title" placeholder="Title Here" />
-    <label for="input-content">Content</label>
-    <input id="input-content" placeholder="Content Here" />
+  <h1 style="text-align: center;">Welcome to your dashboard</h1>
+  <form id="new-post-form" class="create-form" >
+      <div>
+        <label for="input-title">Title</label>
+        <input id="input-title" placeholder="Title Here" />
+      </div>
+      <div>
+        <label for="input-content">Content</label>
+        <textarea id="input-content" placeholder="Content Here"></textarea>
+      </div>
+
     <div>
       <button>Create A Post</button>
-      </div>
+    </div>
   </form>
-
-    {{#each posts as |post|}}
-        {{> post-info post}}
-    {{/each}}
-
-  
+  <div class="cards-display">
+      {{#each posts as |post|}}
+          {{> dashboardpost-info post}}
+      {{/each}}
+  </div>
   <script src="/js/create-post.js"></script>
 </div>

@@ -1,5 +1,3 @@
-console.log("READING create-post.js");
-
 async function newPostHandler(e) {
   e.preventDefault();
 
